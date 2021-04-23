@@ -1,11 +1,11 @@
 import styled from 'styled-components/macro';
 
-export const Inner = styled.div`
+export const Inner = styled.div `
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: ${({ direction }) => direction};
-  max-width: 1100px;
+  max-width: 110rem;
   margin: auto;
   width: 100%;
 
@@ -14,53 +14,54 @@ export const Inner = styled.div`
   }
 `;
 
-export const Pane = styled.div`
+export const Pane = styled.div `
   width: 50%;
 
   @media (max-width: 1000px) {
     width: 100%;
-    padding: 0 45px;
+    padding: 0 4.rem;
     text-align: center;
   }
 `;
 
-export const Title = styled.h1`
-  font-size: 50px;
+
+export const Title = styled.h1 `
+  font-size: 5rem;
   line-height: 1.1;
-  margin-bottom: 8px;
+  margin-bottom: 0.8rem;
 
   @media (max-width: 600px) {
-    font-size: 35px;
+    font-size: 3.5rem;
   }
 `;
 
-export const SubTitle = styled.h2`
-  font-size: 26px;
+export const SubTitle = styled.h2 `
+  font-size: 2.6rem;
   font-weight: normal;
   line-height: normal;
 
   @media (max-width: 600px) {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 `;
 
-export const Image = styled.img`
+export const Image = styled.img `
   max-width: 100%;
   height: auto;
 `;
 
-export const Item = styled.div`
+export const Item = styled.div `
   display: flex;
-  border-bottom: 8px solid #222;
-  padding: 50px 5%;
+  border-bottom: 0.8rem solid #222;
+  padding: 5rem 5%;
   color: white;
   overflow: hidden;
 `;
 
-export const Container = styled.div`
+export const Container = styled.div `
   @media (max-width: 1000px) {
     ${Item}:last-of-type h2 {
-      margin-bottom: 50px;
+      margin-bottom: 5rem;
     }
   }
 `;

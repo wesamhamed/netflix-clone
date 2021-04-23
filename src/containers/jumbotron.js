@@ -8,7 +8,7 @@ export function JumbotronContainer() {
         <Jumbotron.Container>
             {
                 jumboData.map((item) => (
-                    <Jumbotron key={item.key} direction={item.direction}>
+                    <Jumbotron key={item.id} direction={item.direction}>
                         <Jumbotron.Pane>
                             <Jumbotron.Title>{item.title}</Jumbotron.Title>
                             <Jumbotron.SubTitle>{item.subtitle}</Jumbotron.SubTitle>
