@@ -2,7 +2,7 @@ import styled from "styled-components/macro";
 
 export const Container = styled.div `
     display:flex;
-    justify-content:space-between;
+    justify-content:center;
     height:100%;
     margin-top:2rem;
     flex-wrap:wrap;
@@ -18,13 +18,13 @@ export const Input = styled.input `
     width:100%;
     border:0;
     padding:1rem;
-    height:7rem;
+    height:5rem;
 
 `;
 export const Button = styled.button `
     display:flex;
     align-items:center;
-    height:7rem;
+    height:5rem;
     background-color:#e50914;
     color:white;
     text-transform:uppercase;
