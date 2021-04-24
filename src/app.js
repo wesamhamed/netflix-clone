@@ -2,6 +2,7 @@ import React from 'react';
 import {BrowserRouter as Router, Route } from "react-router-dom";
 import {Home,Browse,SignIn,SignUp} from "./pages";
 import * as ROUTES from "./constants/routes";
+import {firebase} from "./lib/firebase.prod";
 
 export function App() {
 
