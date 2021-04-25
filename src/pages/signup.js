@@ -19,6 +19,24 @@ export default function SignUp() {
      const isInValid = firstName===""|| lastName==="" ||email ==="" ||password ==="";
     const handleSignUp =(event)=>{
         event.preventDefault();
+        firebase
+            .auth()
+            .createUserWithEmailAndPassword(email,password)
+            .then(({user})=>{
+                user.updateProfile({
+                    displayName:firstName,
+                    photoURL:Math.floor(Math.random() * 5) + 1
+                })
+            })
+            .then(()=>{
+                history.push(ROUTES.BROWSE)
+            }).catch(({message})=>{
+                setFirstName("")
+                setLastName("");
+                setEmail("");
+                setPassword("");
+                setError(message)
+            });
     }
     return (
         <>
