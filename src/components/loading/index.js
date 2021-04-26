@@ -1,6 +1,17 @@
-import React from 'react'
+import React from 'react';
+import {LockBody,Spinner,Picture,ReleaseBody} from "./styles/loading";
 
+export default function Loading({ src, ...restProps }) {
+    return (
+        <Spinner {...restProps}>
+            <LockBody />
+            <Picture src={`/images/users/${src}.png`} />
+        </Spinner>
+    )
+}
 
-export default function Loading({ children, ...restProps }) {
-
+Loading.ReleaseBody = function LoadingReleaseBody (){
+    return (
+        <ReleaseBody/>
+    )
 }
